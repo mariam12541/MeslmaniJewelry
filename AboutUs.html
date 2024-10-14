@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MeslmaniJewlery</title>
+	<style>
+	 *{
+  padding:0;
+  margin:0;
+  font-family:sans-serif;
+  box-sizing:border-box;
+  }
+  	nav{ 
+	background:black; 
+	padding: 10px 0;
+	z-index:12; 
+	position:fixed; 
+	width:100%; 
+	} 
+	nav ul { 
+	list-style-type: none; 
+	text-align: center;
+}
+	nav ul li {
+  display: inline;
+  margin: 0 10px;
+  transition:background-color 0.9s,padding 0.3s;
+}
+    nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+    nav {
+  background-color: #000000;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+   .logo {
+  width: 50px;
+  margin-right: 20px;
+}
+
+   nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin-left: auto;
+}
+
+   nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+   nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+   nav ul li:hover{
+  padding:30px;
+  background-color:white
+}
+  
+	.about{
+  width:100%;
+  padding:78px 0px;
+  background-color:#191919;
+ }
+ .about img{
+ height:auto;
+ width:420px;
+ }
+ 
+ .about-text{
+ width:550px;
+ }
+ .main{
+ width:1130px;
+ width:95%;
+ margin:0 auto;
+ display:flex;
+ align-items:center;
+ justify-content:space-around;
+ margin-bottom:65px;
+ }
+ .about-text h1{
+ color:white;
+ font-size:80px;
+ text-transform:capitalize;
+ margin-bottom:20px;
+ }
+ .about-text p{
+ color:#FFFFCC;
+ letter-spacing:1px;
+ line-height:28px;
+ font-size:18px;
+ margin-bottom:45px;
+ }
+ 
+ .text h3{
+ color:white;
+ font-size:80px;
+ text-transform:capitalize;
+ margin-bottom:20px;
+ }
+  .text p{
+ color:#FFFFCC;
+ letter-spacing:1px;
+ line-height:28px;
+ font-size:15px;
+ margin-bottom:45px;
+ }
+ .image1{
+ width:1130px;
+ width:95%;
+ margin:0 auto;
+ display:flex;
+ align-items:center;
+ justify-content:space-around;
+ margin-bottom:65px;
+ }
+ .image1{
+ height:auto;
+ }
+ .image1 img {
+ float: right;
+ }
+ .text {
+ float: left;
+ width: 550px;
+ }
+ @media(prefers-reduced-motion:no-preference){
+ 
+ img{
+  scale:.8; opacity: 0;
+ animation:fade-in linear forwards;
+ animation-timeline:view();
+ animation-range:250px 500px;
+ }
+ @keyframes fade-in{
+ to{ scale: 1; opacity: 1;}
+ }
+ }
+ 
+ @keyframes fade-out{
+ to {opacity:0;}
+ }
+ p{
+ animation:fade-out linear;
+ animation-timeline:view();
+ animation-range:exit -200px;
+ }
+ a {
+  color: #fff;
+  margin-right: 5px;
+}
+a:hover{
+color:rgb(0,0,0);
+}
+
+.footer-content{
+margin-top:25px;
+  padding: 5px;
+color:#fff;
+}
+.footer-content h3{
+padding:10px;
+}
+
+	</style>
+</head>
+<body>
+<nav>
+<a href="homepage.html">
+<img src="logo.png" alt="Logo" class="logo" action="homepage.html"></a>
+<ul class="hovering">
+	<li><a href="homepage.html">Home</a></li>
+	<li><a href="AboutUs.html">About Us</a></li>
+	<li><a href="signup.html">Account</a></li>
+</ul>
+</nav>
+<section class="about">
+<div class="main">
+	<img src="logo.png" >
+	<div class="about-text">
+		<h1>About Us</h1>
+		<p>Welcome to our website, where we take pride in offering the finest jewelry products at affordable prices while prioritizing the environment. 
+		Our commitment to sustainability drives us to create a collection that not only dazzles with its exquisite designs but also minimizes its ecological impact. 
+		We carefully source our materials from ethical suppliers and utilize environmentally friendly production methods.
+		By choosing our jewelry, you not only adorn yourself with elegance but also contribute to a greener world.
+		</p>
+	</div>
+</div>
+<hr>
+<div class="image1">
+	<div class="text">
+		<h3>Our Goal</h3>
+		<p>In our store, it's impossible to miss the captivating allure of our exquisite jewelry collection.
+		Our carefully curated selection of pieces is designed to catch every eye that enters our store.
+		From stunning diamond necklaces to intricately crafted gemstone bracelets, each item is a testament to the artistry and craftsmanship that goes into creating exceptional jewelry. 
+		The meticulous attention to detail and the use of high-quality materials make our pieces truly stand out.
+		Whether it's the shimmering brilliance of our diamonds or the vibrant colors of our gemstones, our jewelry is guaranteed to leave a lasting impression. 
+		Step into our store and be captivated by the sheer beauty and elegance of our collection.
+		</p>
+	</div>
+	<img src="4 Luxury Retail Environments Immerse Buyers in Fantasy - Interior Design.jpeg">
+</div>
+<hr>
+<div class="main">
+	<img src="golden rings for her.jpeg" >
+	<div class="about-text">
+		<h1>You can follow us at</h1>
+		
+		 <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://www.twitter.com">Twitter</a>
+			
+			 <div class="footer-content">
+                <h3>Contact Us</h3>				
+                <p>Email:MeslmaniJewlery@gmail.com</p>
+				
+            </div>
+	</div>
+</div>
+
+</section>
+</body>
+</html>
