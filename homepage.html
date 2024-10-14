@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MeslmaniJewlery</title>
+	<style>
+   *{
+   margin:0;
+   background-color:black;
+   } 
+   
+   nav{ 
+   background:black;
+   padding: 10px 0;
+   z-index:12; 
+   position:fixed; 
+   width:100%;
+   } 
+   
+   nav ul {
+   list-style-type: none; 
+   text-align: center;
+}
+
+nav ul li {
+display: inline;
+margin: 0 10px;
+transition:background-color 0.9s,padding 0.3s;
+}
+nav ul li a {
+color: white;
+text-decoration: none;
+
+}
+nav {
+background-color: #000000;
+padding: 10px 20px;
+display: flex;
+align-items: center;
+}
+
+.logo {
+width: 50px;
+margin-right: 20px;
+}
+
+nav ul {
+list-style-type: none;
+text-align: center;
+margin-left: auto;
+}
+
+nav ul li {
+display: inline;
+margin: 0 10px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+nav ul li:hover{
+padding:30px;
+background-color:white
+}
+.video{
+margin-left:20px;
+}
+
+.container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px; /* Adjust the max-width value as needed */
+            margin: 0 auto;
+        }
+
+        .box {
+            width: 45%; /* Adjust the width value as needed */
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .box img {
+            max-width: 100px; /* Adjust the image size as needed */
+            margin-right: 10px;
+       }
+
+        .box .description {
+         flex: 1;
+        }
+		.description {
+    color: white;
+}
+.box a {
+    text-decoration: none; /* Remove underline */
+    border-bottom: none; /* Remove any border under the text */
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+.video {
+            opacity: 1;
+            transition: opacity 5s ease;
+        }
+
+        .fade-out {
+            opacity: 0;
+        }
+
+	footer {
+  background-color:black;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.footer{
+margin-right:30px;
+
+}
+
+	</style>
+	</head>
+	<nav>
+        <a href="homepage.html">
+	<img src="logo.png" alt="Logo" class="logo" action="homepage.html"></a>
+		<ul class="hovering">
+			<li><a href="#homepage.html">Home</a></li>
+			<li><a href="AboutUs.html">About Us</a></li>
+			<li><a href="signup.html">Account</a></li>
+		</ul>
+
+	</nav>
+ <header class="video">
+        <video autoplay muted loop class="hero-video">
+            <source src="jewelry-film.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>  </header>
+        <div class="hero-content">
+           <h1>Jewelry Heaven</h1>
+        <p>Adorn yourself with exquisite jewelry, and let your inner radiance sparkle.</p>
+
+        </div>
+  
+	
+	 <div class="container">
+        <a href="Necklace.html" class="box">
+            <img src="necklace.png" >
+            <div class="description">
+                <h3>Necklaces</h3>
+                <p>Elevate your neckline with our captivating necklaces, designed to make a statement and enhance your unique style</p>
+            </div>
+        </a>
+
+        <a href="Bracelets.html" class="box">
+            <div class="description">
+                <h3>Bracelets</h3>
+                <p>Wrap your wrist in elegance and make a stylish statement with our exquisite collection of bracelets, designed to captivate and adorn.</p>
+            </div>
+            <img src="bracelet.png">
+        </a>
+
+        <a href="Rings.html" class="box">
+            <img src="rings.png">
+            <div class="description">
+                <h3>Rings</h3>
+                <p>Discover the perfect ring that embodies timeless beauty and exquisite craftsmanship, a true symbol of elegance and sophistication</p>
+            </div>
+        </a>
+
+        <a href="Earrings.html" class="box">
+            <div class="description">
+                <h3>Earrings</h3>
+                <p>Dazzle with our enchanting earrings, crafted to illuminate your beauty and add a touch of glamour to any occasion</p>
+            </div>
+            <img src="earring.png" alt="Image 4">
+        </a>
+
+        
+    </div>
+	 <script>
+        var scrolledToTop = true;
+        var previousScrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+        function handleScroll() {
+            var currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
+            var video = document.querySelector('.video');
+            var videoPos = video.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+            if (currentScrollPos > previousScrollPos) {
+                scrolledToTop = false;
+            } else {
+                scrolledToTop = true;
+            }
+
+            previousScrollPos = currentScrollPos;
+
+            if (videoPos < windowHeight / 2 && scrolledToTop) {
+                video.classList.remove('fade-out');
+            } else {
+                video.classList.add('fade-out');
+            }
+        }
+           
+        window.addEventListener('scroll', handleScroll);
+    </script>
+	<footer>
+	<div class="footer">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email:MeslmaniJewlery@gmail.com</p>
+                <p>Phone:+96181054122</p>
+            </div>
+			</footer>
+</body>
+	
+</html>
