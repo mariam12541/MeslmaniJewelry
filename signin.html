@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign-Up</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+    nav {
+            background: black;
+            padding: 10px 0;
+            z-index: 12;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+            transition: background-color 0.9s, padding 0.3s;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li:hover {
+            padding: 20px;
+            background-color: white;
+        }
+        .logo {
+width: 50px;
+margin-right: 20px;
+}
+
+        .sign-in-form {
+            width: 300px;
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+            background: white;
+            padding: 20px;
+            margin: 8% auto 0;
+            text-align: center;
+
+
+        }
+
+        .sign-in-form h1 {
+            color: #a89a32;
+            margin-bottom: 30px;
+        }
+
+        .input-box {
+            border-radius: 20px;
+            padding: 5px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #999;
+            outline: none;
+        }
+
+        .button {
+            color: #fff;
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            margin: 10px 0;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: #a89a32;
+        }
+
+        hr {
+            margin-top: 20px;
+            width: 100%;
+        }
+         label {
+            display: block;
+            text-align: left;
+            margin-top: 5px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="homepage.html">
+    <img src="logo.png" alt="Logo" class="logo" action="homepage.html"></a>
+    <ul class="hovering">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="signup.html">Account</a></li>
+    </ul>
+</nav>
+<div class="sign-in-form">
+    <h1>Sign-in Now</h1>
+    <form>
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" class="input-box" placeholder="someone@gmail.com">
+        </div>
+       <div>
+            <label for="password">Password</label>
+            <input type="password" class="input-box" placeholder="your password" required>
+        </div>
+        
+        <input type="submit" name="submit" value="submit" class="button">
+        <hr>
+      </form> 
+</div>
+</body>
+</html>
